@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "TalentScreen",
+    "slug": "talent-screen",
+    "scheme": "talentscreen",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "platforms": [
+      "android"
+    ],
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "backgroundColor": "#2563EB",
+      "resizeMode": "contain"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.talentscreen.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "TalentScreen needs camera access to record your video interview responses.",
+        "NSMicrophoneUsageDescription": "TalentScreen needs microphone access to record audio for your video interview responses.",
+        "NSPhotoLibraryUsageDescription": "TalentScreen needs photo library access to save your recorded videos."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#2563EB"
+      },
+      "package": "com.talentscreen.app",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      "expo-camera",
+      "expo-av",
+      "expo-secure-store",
+      "expo-router",
+      "expo-asset"
+    ]
+  }
+}
